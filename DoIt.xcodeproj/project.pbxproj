@@ -13,6 +13,7 @@
 		7713ECC11F0D31C8002558CE /* DoIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7713ECBF1F0D31C8002558CE /* DoIt.xcdatamodeld */; };
 		7713ECC31F0D31C8002558CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7713ECC21F0D31C8002558CE /* Assets.xcassets */; };
 		7713ECC61F0D31C8002558CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7713ECC41F0D31C8002558CE /* LaunchScreen.storyboard */; };
+		7713ECCE1F0D375E002558CE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713ECCD1F0D375E002558CE /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7713ECC21F0D31C8002558CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7713ECC51F0D31C8002558CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7713ECC71F0D31C8002558CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7713ECCD1F0D375E002558CE /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7713ECC41F0D31C8002558CE /* LaunchScreen.storyboard */,
 				7713ECC71F0D31C8002558CE /* Info.plist */,
 				7713ECBF1F0D31C8002558CE /* DoIt.xcdatamodeld */,
+				7713ECCD1F0D375E002558CE /* Task.swift */,
 			);
 			path = DoIt;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7713ECCE1F0D375E002558CE /* Task.swift in Sources */,
 				7713ECC11F0D31C8002558CE /* DoIt.xcdatamodeld in Sources */,
 				7713ECBB1F0D31C8002558CE /* ViewController.swift in Sources */,
 				7713ECB91F0D31C8002558CE /* AppDelegate.swift in Sources */,
