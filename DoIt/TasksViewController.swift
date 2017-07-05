@@ -55,9 +55,9 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func getTasks() {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let context = (UIApplication.shared.delegate as! AppDelegate)
         do {
-            tasks = try context.fetch(Task.fetchRequest()) as! [Task]
+            tasks = try context.persistentContainer.viewContext.fetch(Task.fetchRequest()) as! [Task]
             print(tasks)
         } catch {
             print("Oops we have an error!")

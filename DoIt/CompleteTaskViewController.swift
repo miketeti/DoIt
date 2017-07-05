@@ -26,9 +26,9 @@ class CompleteTaskViewController: UIViewController {
     }
     
     @IBAction func completeTapped(_ sender: Any) {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        context.delete(task!)
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        let context = (UIApplication.shared.delegate as! AppDelegate)
+        context.persistentContainer.viewContext.delete(task!)
+        context.saveContext()
 
         navigationController!.popViewController(animated: true)
     }

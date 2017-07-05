@@ -14,14 +14,14 @@ class CreateTaskViewController: UIViewController {
     
     @IBAction func addTapped(_ sender: Any) {
         //View from CoreData
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let context = (UIApplication.shared.delegate as! AppDelegate)
         
-        let task = Task(context: context)
+        let task = Task(context: context.persistentContainer.viewContext)
         task.name = taskNameTextField.text!
         task.important = importantSwitch.isOn
         
         //Save to CoreData
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        context.saveContext()
         
         //Navigate back to main VC
         navigationController!.popViewController(animated: true)
