@@ -10,10 +10,16 @@ import UIKit
 
 class CreateTaskViewController: UIViewController {
     @IBOutlet weak var taskNameTextField: UITextField!
-    
     @IBOutlet weak var importantSwitch: UISwitch!
     
+    var previousVC = TasksViewController()
+    
     @IBAction func addTapped(_ sender: Any) {
+        let task = Task()
+        task.name = taskNameTextField.text!
+        task.important = importantSwitch.isOn
+        //Add new task toi array in preiovous ViewController
+        previousVC.tasks.append(task)
     }
     
 
