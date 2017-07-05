@@ -18,8 +18,12 @@ class CreateTaskViewController: UIViewController {
         let task = Task()
         task.name = taskNameTextField.text!
         task.important = importantSwitch.isOn
-        //Add new task toi array in preiovous ViewController
+        //Add new task to array in preiovous ViewController
         previousVC.tasks.append(task)
+        //Force tableView reload
+        previousVC.tableView.reloadData()
+        //Navigate back to main VC
+        navigationController!.popViewController(animated: true)
     }
     
 
